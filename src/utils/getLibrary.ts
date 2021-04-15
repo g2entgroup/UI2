@@ -1,7 +1,13 @@
-import { Web3Provider } from '@ethersproject/providers'
 
+import {
+    ExternalProvider,
+    JsonRpcFetchFunc,
+    Web3Provider
+} from '@ethersproject/providers'
 
-export default function getLibrary(provider: any): Web3Provider {
+export default function getLibrary(
+    provider: ExternalProvider | JsonRpcFetchFunc
+): Web3Provider {
     const library = new Web3Provider(provider)
     library.pollingInterval = 12000
     return library

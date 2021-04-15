@@ -5,12 +5,13 @@ export const Container = (props: FlexProps) => {
   const { colorMode } = useColorMode();
 
   
+  // theme color 
   const bgColor = {
-    light: "linear(to-r, #fefbd6, #fefbd6)",
+    light: "linear(to-r, #1b2039, #1b2039)",
     dark: "linear(to-br, #384699, #312d56)",
   };
 
-  const color = { light: "black", dark: "white" };
+  const color = { light: "white", dark: "white" };
 
   return (
     <Flex
