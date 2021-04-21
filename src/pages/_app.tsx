@@ -3,19 +3,19 @@ import { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import { Web3ReactProvider } from "@web3-react/core";
-import getLibrary from "../utils/getLibrary";
-import { Container } from "../components/common/Container";
-import Header from '../components/index/header'
-import Footer from '../components/index/footer'
+import { getLibrary } from "../utils/utils";
+import { Container } from "../components/common/container";
+import Header from "../components/common/Navbar/header";
+import Footer from "../components/common/Footer/footer";
 
-const MyApp = ({ Component, pageProps }:AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Web3ReactProvider getLibrary={getLibrary}>
-        <Container minH="100vh">
-        <Header/>
-        <Component {...pageProps} />
-        <Footer/>
+        <Container minH="100vh" minW="1080px">
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
         </Container>
       </Web3ReactProvider>
     </ChakraProvider>
