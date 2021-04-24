@@ -65,6 +65,7 @@ const Footer = () => {
             Have a seat at the table and join our governance DAO, where our creative community helps decide the future of the Creative platform.
           </Text>
           <Box
+            as="button"
             bgColor="#e50168"
             textAlign="center"
             w="12rem"
@@ -103,13 +104,13 @@ const Footer = () => {
             mt="1rem"
           />
           <Box
+            as="button"
             bgColor="#e50168"
             textAlign="center"
             w="9rem"
             p="0.5rem"
             borderRadius="2rem"
             mt="1rem"
-            cursor="pointer"
           >
             Sign Me Up
           </Box>
