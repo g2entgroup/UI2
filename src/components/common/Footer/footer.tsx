@@ -22,7 +22,7 @@ const Footer = () => {
       <Box textAlign="center" mb="3rem">
         <Image
           src="/g2.png"
-          alt="Picture of the author"
+          alt="Creative logo"
           width={80}
           height={80}
         />
