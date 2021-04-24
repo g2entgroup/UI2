@@ -9,10 +9,10 @@ import {
   Input,
 } from "@chakra-ui/react";
 import Header from "../Navbar/header";
-import { BiPhoneCall } from "react-icons/bi";
-import { AiOutlineMail, AiOutlineGooglePlus } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import { FiFacebook, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiFacebook, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+import { SiDiscord } from "react-icons/si";
 import Image from "next/image";
 
 const Footer = () => {
@@ -27,7 +27,6 @@ const Footer = () => {
           height={80}
         />
         <Heading fontSize="2rem">Creative</Heading>
-        <Box>Token</Box>
       </Box>
       {/* 4 sliders  */}
       <Grid
@@ -38,7 +37,7 @@ const Footer = () => {
       >
         <Box w="90%">
           <Box as="h3" fontWeight="500" fontSize="xl" color="#e50168">
-            Miraculous Template
+            Creative Platform
           </Box>
           <Box
             mt="0.3rem"
@@ -48,15 +47,12 @@ const Footer = () => {
             background="linear-gradient(to right, rgba(22, 29, 47, 0),#e50168,rgba(22,29,47,0));"
           />
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            temporibus, labore delectus esse enim illum nihil magnam pariatur
-            praesentium a recusandae sit molestiae hic ipsum optio reiciendis
-            exercitationem nulla numquam.
+          A creative blockchain platform for independent creators, fans, and brands to exchange services directly and earn incentives through DeFi.
           </Text>
         </Box>
         <Box w="90%">
           <Box as="h3" fontWeight="500" fontSize="xl" color="#e50168">
-            Download our App
+            Join Our Community DAO
           </Box>
           <Box
             mt="0.3rem"
@@ -66,10 +62,19 @@ const Footer = () => {
             background="linear-gradient(to right, rgba(22, 29, 47, 0),#e50168,rgba(22,29,47,0));"
           />
           <Text>
-            Go Mobile with our app.
-            <br />
-            Listen to your favourite songs at just one click. Download Now!
+            Have a seat at the table and join our governance DAO, where our creative community helps decide the future of the Creative platform.
           </Text>
+          <Box
+            bgColor="#e50168"
+            textAlign="center"
+            w="12rem"
+            p="0.5rem"
+            borderRadius="2rem"
+            mt="1rem"
+            cursor="pointer"
+          >
+            <a href="https://community.xyz/#YN7VDKn_JjziC4tTL92K9pO_iMcnMSjk6kgSBr1EPjI" target="_blank">Creative Organization</a>
+          </Box>
         </Box>
         <Box w="90%">
           <Box as="h3" fontWeight="500" fontSize="xl" color="#e50168">
@@ -129,11 +134,13 @@ const Footer = () => {
               py="0.5rem"
               borderRadius="0.4rem"
             >
-              <BiPhoneCall />
+              <SiDiscord />
             </Box>
             <Box>
-              <Box>Call us:</Box>
-              <Box>(+1) 202-555-0176, (+1) 2021-5501</Box>
+              <Box>Discord with us:</Box>
+              <Box>
+                <a href="https://discord.gg/8B4p7ztWTp">Creative</a>
+              </Box>
             </Box>
           </Flex>
           {/* email  */}
@@ -150,11 +157,15 @@ const Footer = () => {
             </Box>
             <Box>
               <Box>Email us:</Box>
-              <Box>demo@mail.com</Box>
+              <Box>
+                <a href="mailto:creatives@creativeplatform.io">
+                  creatives@creativeplatform.io
+                </a>
+                </Box>
             </Box>
           </Flex>
 
-          {/* address  */}
+          {/* address  
           <Flex mt="1rem" alignItems="center">
             <Box
               mr="1rem"
@@ -170,14 +181,15 @@ const Footer = () => {
               <Box>598 Old House Drive, London</Box>
             </Box>
           </Flex>
+          */}
 
           <Flex mt="1rem">
             <Box>Follow us:</Box>
-            <Box
+            {/* <Box
               mx="1rem"
               w="1.8rem"
               bgGradient="linear(to-b, #2b5fa8, #e6006b)"
-              px="0.3rem"
+              px="0.4rem"
               py="0.25rem"
               borderRadius="0.4rem"
               cursor="pointer"
@@ -188,35 +200,39 @@ const Footer = () => {
               mr="1rem"
               w="1.8rem"
               bgGradient="linear(to-b, #2b5fa8, #e6006b)"
-              px="0.3rem"
+              px="0.4rem"
               py="0.25rem"
               borderRadius="0.4rem"
               cursor="pointer"
             >
               <FiLinkedin />
-            </Box>
+            </Box> */}
 
             <Box
-              mr="1rem"
+              mx="1rem"
               w="1.8rem"
               bgGradient="linear(to-b, #2b5fa8, #e6006b)"
-              px="0.3rem"
+              px="0.4rem"
               py="0.25rem"
               borderRadius="0.4rem"
               cursor="pointer"
             >
-              <FiTwitter />
+              <a href="https://www.twitter.com/creativecrtv" target="_blank">
+                <FiTwitter />
+              </a>
             </Box>
             <Box
               mr="1rem"
               w="1.8rem"
               bgGradient="linear(to-b, #2b5fa8, #e6006b)"
-              px="0.3rem"
+              px="0.4rem"
               py="0.25rem"
               borderRadius="0.4rem"
               cursor="pointer"
             >
-              <AiOutlineGooglePlus />
+              <a href="https://www.instagram.com/creativecrtv" target="_blank">
+                <FiInstagram />
+              </a>
             </Box>
           </Flex>
         </Box>
@@ -234,9 +250,11 @@ const Footer = () => {
         />
         {/* Copyright */}
         <Box textAlign="center">
-          Copyright © 2018{" "}
+          Copyright © 2021{" "}
           <Box as="text" color="#e50168">
-            G2 Entertaonment Group, LLC
+            <a href="https://community.xyz/#YN7VDKn_JjziC4tTL92K9pO_iMcnMSjk6kgSBr1EPjI">
+            Creative Organization, LLC
+            </a>
           </Box>
           . All Rights Reserved.
         </Box>
