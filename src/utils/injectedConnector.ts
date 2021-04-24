@@ -1,12 +1,22 @@
 import { InjectedConnector } from '@web3-react/injected-connector';
 
 
-export const injectedConnector = new InjectedConnector({
+export const Networks = {
+  MainNet: 1,
+  Ropsten: 3,
+  Rinkeby: 4,
+  Goerli: 5,
+  Kovan: 42
+}
+
+
+  export const injectedConnector = new InjectedConnector({
     supportedChainIds: [
-      // 1, // Mainet
-      // 3, // Ropsten
-      4, // Rinkeby
-      // 5, // Goerli
-      // 42, // Kovan
-    ],
+      Networks.MainNet, // Mainet
+      Networks.Ropsten, // Ropsten
+      Networks.Rinkeby, // Rinkeby
+      Networks.Goerli, // Goerli
+      Networks.Kovan // Kovan
+    ]
   })
+  
